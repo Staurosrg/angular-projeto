@@ -1,0 +1,19 @@
+<form [formGroup]="pessoaForm" (ngSubmit)="onSubmit()">
+	<label>
+		Id:
+		<input type="text" formControlName="id">
+	</label>
+	<label>
+		Nome:
+		<input type="text" formControlName="nome">
+	</label>
+	<label>
+		CPF:
+		<input type="text" formControlName="cpf">
+	</label>
+	<label>
+		Data de nascimento:
+		<input type="date" formControlName="dataNascimento">
+	</label>
+	<button type="submit">Submit</button>
+</form>
